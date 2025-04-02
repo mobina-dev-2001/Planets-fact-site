@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Custom Js -->
+  <script src="scripts/main.js" defer></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Planets fact site</title>
+</head>
+
+<body class="jupiter">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+
+  <header class="primary-header flex">
+    <div class="logo-container">
+      <a class="text-white ff-antonio fs-700 fw-medium letter-spacing-3 uppercase" href="index.html">The planets</a>
+    </div>
+
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav>
+      <ul class="primary-navigation flex fs-300 fw-bold line-height-2 letter-spacing-2 uppercase"
+        id="primary-navigation" data-visible="false">
+
+        <li class="flex">
+          <a class="flex" href="index.html">Mercury<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="venus.html">Venus<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="earth.html">Earth<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="mars.html">Mars<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="active flex">
+          <a class="flex" href="jupiter.html">Jupiter<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="saturn.html">Saturn<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="uranus.html">Uranus<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="neptune.html">Neptune<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" id="main">
+    <div class="grid-container">
+
+      <div class="illustration-cotnainer">
+        <div id="jupiter-illustration" role="img">
+          <img src="assets/planet-jupiter.svg" alt="the planet jupiter" />
+        </div>
+        <div hidden id="jupiter-internal-illustration" role="img">
+          <img src="assets/planet-jupiter-internal.svg" alt="the planet jupiter - internal" />
+        </div>
+        <div hidden id="jupiter-geology-illustration" role="img">
+          <img src="assets/planet-jupiter.svg" alt="the planet jupiter" />
+          <img src="assets/geology-jupiter.png" alt="the planet jupiter - geology" />
+        </div>
+      </div>
+
+      <div class="main-content-container flex">
+        <!-- Jupiter -->
+        <div class="description-container flow" id="jupiter-tab" role="tabpanel" tabindex="0">
+
+          <h1 class="ff-antonio fs-900 fw-medium uppercase">Jupiter</h1>
+          <p class="line-height-1">Jupiter is the fifth planet from the Sun and the largest in the Solar System.
+            It is a gas giant with a mass two and a half times that of all the other
+            planets in the Solar System combined, but less than one-thousandth the mass
+            of the Sun.</p>
+
+          <figcaption class="flex text-white-opaque fs-600" style="--gap: .2rem;">
+            Source :
+            <cite>
+              <a class="flex fw-bold" href="https://en.wikipedia.org/wiki/Jupiter" target="_blank">Wikipedia
+                <img src="assets/icon-source.svg" alt="source icon" />
+              </a>
+            </cite>
+          </figcaption>
+
+        </div>
+
+        <!-- Jupiter-internal -->
+        <div hidden class="description-container flow" id="jupiter-internal-tab" role="tabpanel" tabindex="0">
+
+          <h1 class="ff-antonio fs-900 fw-medium uppercase">Jupiter</h1>
+          <p class="line-height-1">When the Juno arrived in 2016, it found that Jupiter has a very diffuse core
+            that mixes into its mantle. A possible cause is an impact from a planet of
+            about ten Earth masses a few million years after Jupiter's formation, which
+            would have disrupted an originally solid Jovian core.</p>
+
+          <figcaption class="flex text-white-opaque fs-600" style="--gap: .2rem;">
+            Source :
+            <cite>
+              <a class="flex fw-bold" href="https://en.wikipedia.org/wiki/Jupiter#Internal_structure"
+                target="_blank">Wikipedia
+                <img src="assets/icon-source.svg" alt="source icon" />
+              </a>
+            </cite>
+          </figcaption>
+
+        </div>
+
+        <!-- Jupiter-geology -->
+        <div hidden class="description-container flow" id="jupiter-geology-tab" role="tabpanel" tabindex="0">
+
+          <h1 class="ff-antonio fs-900 fw-medium uppercase">Jupiter</h1>
+          <p class="line-height-1">The best known feature of Jupiter is the Great Red Spot, a persistent
+            anticyclonic storm located 22° south of the equator. It is known to have
+            existed since at least 1831, and possibly since 1665.</p>
+
+          <figcaption class="flex text-white-opaque fs-600" style="--gap: .2rem;">
+            Source :
+            <cite>
+              <a class="flex fw-bold" href="https://en.wikipedia.org/wiki/Jupiter#Great_Red_Spot_and_other_vortices"
+                target="_blank">Wikipedia
+                <img src="assets/icon-source.svg" alt="source icon" />
+              </a>
+            </cite>
+          </figcaption>
+
+        </div>
+
+        <div class="tab-buttons flex" role="tablist" aria-label="planetary details navigation">
+
+          <button class="text-white fs-400 fw-bold letter-spacing-5 uppercase" aria-selected="true"
+            aria-controls="jupiter-tab" role="tab" data-image="jupiter-illustration" tabindex="0"><span
+              class="text-white-opaque" aria-hidden="true">01</span>Overview</button>
+
+          <button class="text-white fs-400 fw-bold letter-spacing-5 uppercase" aria-selected="false"
+            aria-controls="jupiter-internal-tab" role="tab" data-image="jupiter-internal-illustration"
+            tabindex="-1"><span class="text-white-opaque" aria-hidden="true">02</span><span>Internal
+            </span>Structure</button>
+
+          <button class="text-white fs-400 fw-bold letter-spacing-5 uppercase" aria-selected="false"
+            aria-controls="jupiter-geology-tab" role="tab" data-image="jupiter-geology-illustration" tabindex="-1"><span
+              class="text-white-opaque" aria-hidden="true">03</span>Surface<span>
+              Geology</span></button>
+
+        </div>
+      </div>
+
+      <div class="info-container flex">
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Rotation Time</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">9.93 Hours</span>
+        </div>
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Revolution Time</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">11.86 Years</span>
+        </div>
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Radius</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">69,911 KM</span>
+        </div>
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Average Temp.</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">-108°c</span>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

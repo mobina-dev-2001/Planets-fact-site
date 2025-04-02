@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Custom Js -->
+  <script src="scripts/main.js" defer></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Planets fact site</title>
+</head>
+
+<body class="mars">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+
+  <header class="primary-header flex">
+    <div class="logo-container">
+      <a class="text-white ff-antonio fs-700 fw-medium letter-spacing-3 uppercase" href="index.html">The planets</a>
+    </div>
+
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav>
+      <ul class="primary-navigation flex fs-300 fw-bold line-height-2 letter-spacing-2 uppercase"
+        id="primary-navigation" data-visible="false">
+
+        <li class="flex">
+          <a class="flex" href="index.html">Mercury<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="venus.html">Venus<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="earth.html">Earth<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="active flex">
+          <a class="flex" href="mars.html">Mars<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="jupiter.html">Jupiter<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="saturn.html">Saturn<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="uranus.html">Uranus<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="neptune.html">Neptune<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" id="main">
+    <div class="grid-container">
+
+      <div class="illustration-cotnainer">
+        <div id="mars-illustration" role="img">
+          <img src="assets/planet-mars.svg" alt="the planet mars" />
+        </div>
+        <div hidden id="mars-internal-illustration" role="img">
+          <img src="assets/planet-mars-internal.svg" alt="the planet mars - internal" />
+        </div>
+        <div hidden id="mars-geology-illustration" role="img">
+          <img src="assets/planet-mars.svg" alt="the planet mars" />
+          <img src="assets/geology-mars.png" alt="the planet mars - geology" />
+        </div>
+      </div>
+
+      <div class="main-content-container flex">
+        <!-- Mars -->
+        <div class="description-container flow" id="mars-tab" role="tabpanel" tabindex="0">
+
+          <h1 class="ff-antonio fs-900 fw-medium uppercase">Mars</h1>
+          <p class="line-height-1">Mars is the fourth planet from the Sun and the second-smallest planet
+            in the Solar System, being larger than only Mercury. In English, Mars
+            carries the name of the Roman god of war and is often referred to as
+            the "Red Planet".</p>
+
+          <figcaption class="flex text-white-opaque fs-600" style="--gap: .2rem;">
+            Source :
+            <cite>
+              <a class="flex fw-bold" href="https://en.wikipedia.org/wiki/Mars" target="_blank">Wikipedia
+                <img src="assets/icon-source.svg" alt="source icon" />
+              </a>
+            </cite>
+          </figcaption>
+
+        </div>
+
+        <!-- Mars-internal -->
+        <div hidden class="description-container flow" id="mars-internal-tab" role="tabpanel" tabindex="0">
+
+          <h1 class="ff-antonio fs-900 fw-medium uppercase">Mars</h1>
+          <p class="line-height-1">Like Earth, Mars has differentiated into a dense metallic core overlaid
+            by less dense materials. Scientists initially determined that the core
+            is at least partially liquid. Current models of its interior imply a
+            core consisting primarily of iron and nickel with about 16–17% sulfur.</p>
+
+          <figcaption class="flex text-white-opaque fs-600" style="--gap: .2rem;">
+            Source :
+            <cite>
+              <a class="flex fw-bold" href="https://en.wikipedia.org/wiki/Mars#Internal_structure"
+                target="_blank">Wikipedia
+                <img src="assets/icon-source.svg" alt="source icon" />
+              </a>
+            </cite>
+          </figcaption>
+
+        </div>
+
+        <!-- Mars-geology -->
+        <div hidden class="description-container flow" id="mars-geology-tab" role="tabpanel" tabindex="0">
+
+          <h1 class="ff-antonio fs-900 fw-medium uppercase">Mars</h1>
+          <p class="line-height-1">Mars is a terrestrial planet whose surface consists of minerals containing
+            silicon and oxygen, metals, and other elements that typically make up rock.
+            The surface is primarily composed of tholeiitic basalt, although parts are
+            more silica-rich than typical basalt.</p>
+
+          <figcaption class="flex text-white-opaque fs-600" style="--gap: .2rem;">
+            Source :
+            <cite>
+              <a class="flex fw-bold" href="https://en.wikipedia.org/wiki/Mars#Surface_geology"
+                target="_blank">Wikipedia
+                <img src="assets/icon-source.svg" alt="source icon" />
+              </a>
+            </cite>
+          </figcaption>
+
+        </div>
+
+        <div class="tab-buttons flex" role="tablist" aria-label="planetary details navigation">
+
+          <button class="text-white fs-400 fw-bold letter-spacing-5 uppercase" aria-selected="true"
+            aria-controls="mars-tab" role="tab" data-image="mars-illustration" tabindex="0"><span
+              class="text-white-opaque" aria-hidden="true">01</span>Overview</button>
+
+          <button class="text-white fs-400 fw-bold letter-spacing-5 uppercase" aria-selected="false"
+            aria-controls="mars-internal-tab" role="tab" data-image="mars-internal-illustration" tabindex="-1"><span
+              class="text-white-opaque" aria-hidden="true">02</span><span>Internal
+            </span>Structure</button>
+
+          <button class="text-white fs-400 fw-bold letter-spacing-5 uppercase" aria-selected="false"
+            aria-controls="mars-geology-tab" role="tab" data-image="mars-geology-illustration" tabindex="-1"><span
+              class="text-white-opaque" aria-hidden="true">03</span>Surface<span>
+              Geology</span></button>
+
+        </div>
+      </div>
+
+      <div class="info-container flex">
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Rotation Time</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">1.03 Days</span>
+        </div>
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Revolution Time</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">1.88 Years</span>
+        </div>
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Radius</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">3,389.5 KM</span>
+        </div>
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Average Temp.</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">-28°c</span>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

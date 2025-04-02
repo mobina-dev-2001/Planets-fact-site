@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Custom Js -->
+  <script src="scripts/main.js" defer></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Planets fact site</title>
+</head>
+
+<body class="saturn">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+
+  <header class="primary-header flex">
+    <div class="logo-container">
+      <a class="text-white ff-antonio fs-700 fw-medium letter-spacing-3 uppercase" href="index.html">The planets</a>
+    </div>
+
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav>
+      <ul class="primary-navigation flex fs-300 fw-bold line-height-2 letter-spacing-2 uppercase"
+        id="primary-navigation" data-visible="false">
+
+        <li class="flex">
+          <a class="flex" href="index.html">Mercury<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="venus.html">Venus<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="earth.html">Earth<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="mars.html">Mars<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="jupiter.html">Jupiter<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="active flex">
+          <a class="flex" href="saturn.html">Saturn<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="uranus.html">Uranus<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="neptune.html">Neptune<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" id="main">
+    <div class="grid-container">
+
+      <div class="illustration-cotnainer">
+        <div id="saturn-illustration" role="img">
+          <img src="assets/planet-saturn.svg" alt="the planet saturn" />
+        </div>
+        <div hidden id="saturn-internal-illustration" role="img">
+          <img src="assets/planet-saturn-internal.svg" alt="the planet saturn - internal" />
+        </div>
+        <div hidden id="saturn-geology-illustration" role="img">
+          <img src="assets/planet-saturn.svg" alt="the planet saturn" />
+          <img src="assets/geology-saturn.png" alt="the planet saturn - geology" />
+        </div>
+      </div>
+
+      <div class="main-content-container flex">
+        <!-- Saturn -->
+        <div class="description-container flow" id="saturn-tab" role="tabpanel" tabindex="0">
+
+          <h1 class="ff-antonio fs-900 fw-medium uppercase">Saturn</h1>
+          <p class="line-height-1">Saturn is the sixth planet from the Sun and the second-largest in the Solar
+            System, after Jupiter. It is a gas giant with an average radius of about
+            nine and a half times that of Earth. It only has one-eighth the average
+            density of Earth.</p>
+
+          <figcaption class="flex text-white-opaque fs-600" style="--gap: .2rem;">
+            Source :
+            <cite>
+              <a class="flex fw-bold" href="https://en.wikipedia.org/wiki/Saturn" target="_blank">Wikipedia
+                <img src="assets/icon-source.svg" alt="source icon" />
+              </a>
+            </cite>
+          </figcaption>
+
+        </div>
+
+        <!-- Saturn-internal -->
+        <div hidden class="description-container flow" id="saturn-internal-tab" role="tabpanel" tabindex="0">
+
+          <h1 class="ff-antonio fs-900 fw-medium uppercase">Saturn</h1>
+          <p class="line-height-1">Despite consisting mostly of hydrogen and helium, most of Saturn's mass
+            is not in the gas phase, because hydrogen becomes a non-ideal liquid
+            when the density is above 0.01 g/cm3, which is reached at a radius
+            containing 99.9% of Saturn's mass.</p>
+
+          <figcaption class="flex text-white-opaque fs-600" style="--gap: .2rem;">
+            Source :
+            <cite>
+              <a class="flex fw-bold" href="https://en.wikipedia.org/wiki/Saturn#Internal_structure"
+                target="_blank">Wikipedia
+                <img src="assets/icon-source.svg" alt="source icon" />
+              </a>
+            </cite>
+          </figcaption>
+
+        </div>
+
+        <!-- Saturn-geology -->
+        <div hidden class="description-container flow" id="saturn-geology-tab" role="tabpanel" tabindex="0">
+
+          <h1 class="ff-antonio fs-900 fw-medium uppercase">Saturn</h1>
+          <p class="line-height-1">The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25%
+            helium by volume. The planet's most famous feature is its prominent ring
+            system, which is composed mostly of ice particles with a smaller amount
+            of rocky debris and dust.</p>
+
+          <figcaption class="flex text-white-opaque fs-600" style="--gap: .2rem;">
+            Source :
+            <cite>
+              <a class="flex fw-bold" href="https://en.wikipedia.org/wiki/Saturn#Atmosphere" target="_blank">Wikipedia
+                <img src="assets/icon-source.svg" alt="source icon" />
+              </a>
+            </cite>
+          </figcaption>
+
+        </div>
+
+        <div class="tab-buttons flex" role="tablist" aria-label="planetary details navigation">
+
+          <button class="text-white fs-400 fw-bold letter-spacing-5 uppercase" aria-selected="true"
+            aria-controls="saturn-tab" role="tab" data-image="saturn-illustration" tabindex="0"><span
+              class="text-white-opaque" aria-hidden="true">01</span>Overview</button>
+
+          <button class="text-white fs-400 fw-bold letter-spacing-5 uppercase" aria-selected="false"
+            aria-controls="saturn-internal-tab" role="tab" data-image="saturn-internal-illustration" tabindex="-1"><span
+              class="text-white-opaque" aria-hidden="true">02</span><span>Internal
+            </span>Structure</button>
+
+          <button class="text-white fs-400 fw-bold letter-spacing-5 uppercase" aria-selected="false"
+            aria-controls="saturn-geology-tab" role="tab" data-image="saturn-geology-illustration" tabindex="-1"><span
+              class="text-white-opaque" aria-hidden="true">03</span>Surface<span>
+              Geology</span></button>
+
+        </div>
+      </div>
+
+      <div class="info-container flex">
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Rotation Time</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">10.8 Hours</span>
+        </div>
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Revolution Time</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">29.46 Years</span>
+        </div>
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Radius</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">58,232 KM</span>
+        </div>
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Average Temp.</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">-138°c</span>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

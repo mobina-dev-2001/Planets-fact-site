@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Custom Js -->
+  <script src="scripts/main.js" defer></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Planets fact site</title>
+</head>
+
+<body class="venus">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+
+  <header class="primary-header flex">
+    <div class="logo-container">
+      <a class="text-white ff-antonio fs-700 fw-medium letter-spacing-3 uppercase" href="index.html">The planets</a>
+    </div>
+
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav>
+      <ul class="primary-navigation flex fs-300 fw-bold line-height-2 letter-spacing-2 uppercase"
+        id="primary-navigation" data-visible="false">
+
+        <li class="flex">
+          <a class="flex" href="index.html">Mercury<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="active flex">
+          <a class="flex" href="venus.html">Venus<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="earth.html">Earth<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="mars.html">Mars<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="jupiter.html">Jupiter<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="saturn.html">Saturn<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="uranus.html">Uranus<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="neptune.html">Neptune<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" id="main">
+    <div class="grid-container">
+
+      <div class="illustration-cotnainer">
+        <div id="venus-illustration" role="img">
+          <img src="assets/planet-venus.svg" alt="the planet venus" />
+        </div>
+        <div hidden id="venus-internal-illustration" role="img">
+          <img src="assets/planet-venus-internal.svg" alt="the planet venus - internal" />
+        </div>
+        <div hidden id="venus-geology-illustration" role="img">
+          <img src="assets/planet-venus.svg" alt="the planet venus" />
+          <img src="assets/geology-venus.png" alt="the planet venus - geology" />
+        </div>
+      </div>
+
+      <div class="main-content-container flex">
+        <!-- Venus -->
+        <div class="description-container flow" id="venus-tab" role="tabpanel" tabindex="0">
+
+          <h1 class="ff-antonio fs-900 fw-medium uppercase">Venus</h1>
+          <p class="line-height-1">Venus is the second planet from the Sun. It is named after the
+            Roman goddess of love and beauty. As the brightest natural object
+            in Earth's night sky after the Moon, Venus can cast shadows and
+            can be, on rare occasions, visible to the naked eye in broad daylight.</p>
+
+          <figcaption class="flex text-white-opaque fs-600" style="--gap: .2rem;">
+            Source :
+            <cite>
+              <a class="flex fw-bold" href="https://en.wikipedia.org/wiki/Venus" target="_blank">Wikipedia
+                <img src="assets/icon-source.svg" alt="source icon" />
+              </a>
+            </cite>
+          </figcaption>
+
+        </div>
+
+        <!-- Venus-internal -->
+        <div hidden class="description-container flow" id="venus-internal-tab" role="tabpanel" tabindex="0">
+
+          <h1 class="ff-antonio fs-900 fw-medium uppercase">Venus</h1>
+          <p class="line-height-1">The similarity in size and density between Venus and Earth suggests
+            they share a similar internal structure: a core, mantle, and crust.
+            Like that of Earth, Venusian core is most likely at least partially
+            liquid because the two planets have been cooling at about the same rate.</p>
+
+          <figcaption class="flex text-white-opaque fs-600" style="--gap: .2rem;">
+            Source :
+            <cite>
+              <a class="flex fw-bold" href="https://en.wikipedia.org/wiki/Venus#Internal_structure"
+                target="_blank">Wikipedia
+                <img src="assets/icon-source.svg" alt="source icon" />
+              </a>
+            </cite>
+          </figcaption>
+
+        </div>
+
+        <!-- Venus-geology -->
+        <div hidden class="description-container flow" id="venus-geology-tab" role="tabpanel" tabindex="0">
+
+          <h1 class="ff-antonio fs-900 fw-medium uppercase">Venus</h1>
+          <p class="line-height-1">Much of the Venusian surface appears to have been shaped by volcanic activity.
+            Venus has several times as many volcanoes as Earth, and it has 167 large
+            volcanoes that are over 100 km (60 mi) across. The only volcanic complex
+            of this size on Earth is the Big Island of Hawaii.</p>
+
+          <figcaption class="flex text-white-opaque fs-600" style="--gap: .2rem;">
+            Source :
+            <cite>
+              <a class="flex fw-bold" href="https://en.wikipedia.org/wiki/Venus#Surface_geology"
+                target="_blank">Wikipedia
+                <img src="assets/icon-source.svg" alt="source icon" />
+              </a>
+            </cite>
+          </figcaption>
+
+        </div>
+
+        <div class="tab-buttons flex" role="tablist" aria-label="planetary details navigation">
+
+          <button class="text-white fs-400 fw-bold letter-spacing-5 uppercase" aria-selected="true"
+            aria-controls="venus-tab" role="tab" data-image="venus-illustration" tabindex="0"><span
+              class="text-white-opaque" aria-hidden="true">01</span>Overview</button>
+
+          <button class="text-white fs-400 fw-bold letter-spacing-5 uppercase" aria-selected="false"
+            aria-controls="venus-internal-tab" role="tab" data-image="venus-internal-illustration" tabindex="-1"><span
+              class="text-white-opaque" aria-hidden="true">02</span><span>Internal
+            </span>Structure</button>
+
+          <button class="text-white fs-400 fw-bold letter-spacing-5 uppercase" aria-selected="false"
+            aria-controls="venus-geology-tab" role="tab" data-image="venus-geology-illustration" tabindex="-1"><span
+              class="text-white-opaque" aria-hidden="true">03</span>Surface<span>
+              Geology</span></button>
+
+        </div>
+      </div>
+
+      <div class="info-container flex">
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Rotation Time</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">243 Days</span>
+        </div>
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Revolution Time</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">224.7 Days</span>
+        </div>
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Radius</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">6,051.8 KM</span>
+        </div>
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Average Temp.</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">471°c</span>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Custom Js -->
+  <script src="scripts/main.js" defer></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Planets fact site</title>
+</head>
+
+<body class="neptune">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+
+  <header class="primary-header flex">
+    <div class="logo-container">
+      <a class="text-white ff-antonio fs-700 fw-medium letter-spacing-3 uppercase" href="index.html">The planets</a>
+    </div>
+
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav>
+      <ul class="primary-navigation flex fs-300 fw-bold line-height-2 letter-spacing-2 uppercase"
+        id="primary-navigation" data-visible="false">
+
+        <li class="flex">
+          <a class="flex" href="index.html">Mercury<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="venus.html">Venus<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="earth.html">Earth<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="mars.html">Mars<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="jupiter.html">Jupiter<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="saturn.html">Saturn<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="flex">
+          <a class="flex" href="uranus.html">Uranus<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+        <li class="active flex">
+          <a class="flex" href="neptune.html">Neptune<img src="assets/icon-chevron.svg" alt="chevron"
+              aria-hidden="true" /></a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" id="main">
+    <div class="grid-container">
+
+      <div class="illustration-cotnainer">
+        <div id="neptune-illustration" role="img">
+          <img src="assets/planet-neptune.svg" alt="the planet neptune" />
+        </div>
+        <div hidden id="neptune-internal-illustration" role="img">
+          <img src="assets/planet-neptune-internal.svg" alt="the planet neptune - internal" />
+        </div>
+        <div hidden id="neptune-geology-illustration" role="img">
+          <img src="assets/planet-neptune.svg" alt="the planet neptune" />
+          <img src="assets/geology-neptune.png" alt="the planet neptune - geology" />
+        </div>
+      </div>
+
+      <div class="main-content-container flex">
+        <!-- Neptune -->
+        <div class="description-container flow" id="neptune-tab" role="tabpanel" tabindex="0">
+
+          <h1 class="ff-antonio fs-900 fw-medium uppercase">Neptune</h1>
+          <p class="line-height-1">Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar
+            System, it is the fourth-largest planet by diameter, the third-most-massive planet,
+            and the densest giant planet. It is 17 times the mass of Earth, more massive than
+            its near-twin Uranus.</p>
+
+          <figcaption class="flex text-white-opaque fs-600" style="--gap: .2rem;">
+            Source :
+            <cite>
+              <a class="flex fw-bold" href="https://en.wikipedia.org/wiki/Neptune" target="_blank">Wikipedia
+                <img src="assets/icon-source.svg" alt="source icon" />
+              </a>
+            </cite>
+          </figcaption>
+
+        </div>
+
+        <!-- Neptune-internal -->
+        <div hidden class="description-container flow" id="neptune-internal-tab" role="tabpanel" tabindex="0">
+
+          <h1 class="ff-antonio fs-900 fw-medium uppercase">Neptune</h1>
+          <p class="line-height-1">Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5%
+            to 10% of its mass and extends perhaps 10% to 20% of the way towards the core.
+            Increasing concentrations of methane, ammonia and water are found in the lower regions.</p>
+
+          <figcaption class="flex text-white-opaque fs-600" style="--gap: .2rem;">
+            Source :
+            <cite>
+              <a class="flex fw-bold" href="https://en.wikipedia.org/wiki/Neptune#Internal_structure"
+                target="_blank">Wikipedia
+                <img src="assets/icon-source.svg" alt="source icon" />
+              </a>
+            </cite>
+          </figcaption>
+
+        </div>
+
+        <!-- Neptune-geology -->
+        <div hidden class="description-container flow" id="neptune-geology-tab" role="tabpanel" tabindex="0">
+
+          <h1 class="ff-antonio fs-900 fw-medium uppercase">Neptune</h1>
+          <p class="line-height-1">Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is
+            also
+            present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in
+            the red and infrared portion of the spectrum.</p>
+
+          <figcaption class="flex text-white-opaque fs-600" style="--gap: .2rem;">
+            Source :
+            <cite>
+              <a class="flex fw-bold" href="https://en.wikipedia.org/wiki/Neptune#Atmosphere" target="_blank">Wikipedia
+                <img src="assets/icon-source.svg" alt="source icon" />
+              </a>
+            </cite>
+          </figcaption>
+
+        </div>
+
+        <div class="tab-buttons flex" role="tablist" aria-label="planetary details navigation">
+
+          <button class="text-white fs-400 fw-bold letter-spacing-5 uppercase" aria-selected="true"
+            aria-controls="neptune-tab" role="tab" data-image="neptune-illustration" tabindex="0"><span
+              class="text-white-opaque" aria-hidden="true">01</span>Overview</button>
+
+          <button class="text-white fs-400 fw-bold letter-spacing-5 uppercase" aria-selected="false"
+            aria-controls="neptune-internal-tab" role="tab" data-image="neptune-internal-illustration"
+            tabindex="-1"><span class="text-white-opaque" aria-hidden="true">02</span><span>Internal
+            </span>Structure</button>
+
+          <button class="text-white fs-400 fw-bold letter-spacing-5 uppercase" aria-selected="false"
+            aria-controls="neptune-geology-tab" role="tab" data-image="neptune-geology-illustration" tabindex="-1"><span
+              class="text-white-opaque" aria-hidden="true">03</span>Surface<span>
+              Geology</span></button>
+
+        </div>
+      </div>
+
+      <div class="info-container flex">
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Rotation Time</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">16.08 Hours</span>
+        </div>
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Revolution Time</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">164.79 Years</span>
+        </div>
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Radius</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">24,622 KM</span>
+        </div>
+
+        <div>
+          <p class="text-white-opaque fs-200 fw-bold letter-spacing-1 uppercase">Average Temp.</p>
+          <span class="ff-antonio fs-800 fw-medium letter-spacing-4 uppercase">-201°c</span>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

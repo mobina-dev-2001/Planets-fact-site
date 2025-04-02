@@ -1,0 +1,162 @@
+/*======================================
+*           custom properties           *
+======================================*/
+@font-face {
+    font-family: 'Spartan';
+    font-weight: 400;
+    src: url(../assets/fonts/Spartan-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Spartan';
+    font-weight: 500;
+    src: url(../assets/fonts/Spartan-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Spartan';
+    font-weight: 600;
+    src: url(../assets/fonts/Spartan-Bold.ttf);
+}
+
+:root {
+    /* colors */
+    --clr-white: 0, 0%, 100%;
+    --clr-rich-black: 240, 67%, 8%;
+    --clr-arsenic: 240, 17%, 26%;
+    --clr-roman-silver: 240, 6%, 54%;
+    --clr-moonstone: 194, 48%, 49%;
+    --clr-indian-yellow: 33, 82%, 61%;
+    --clr-blue-violet: 263, 67%, 51%;
+    --clr-cinnabar: 10, 63%, 51%;
+    --clr-cg-red: 2, 68%, 53%;
+    --clr-flame: 17, 73%, 46%;
+    --clr-light-sea-green: 169, 73%, 44%;
+    --clr-ultramarine-blue: 222, 87%, 56%;
+
+    /* font families */
+    --ff-antonio: "Antonio", sans-serif;
+    --ff-spartan: "Spartan", sans-serif;
+
+    /* font sizes */
+    --fs-900: 5rem;
+    --fs-800: 2.5rem;
+    --fs-700: 1.75rem;
+    --fs-600: .875rem;
+    --fs-500: .875rem;
+    --fs-400: .75rem;
+    --fs-300: .688rem;
+    --fs-200: .688rem;
+
+    /* font weights */
+    --fw-bold: 600;
+    --fw-medium: 500;
+    --fw-regular: 400;
+
+    /* letter spacing */
+    --ls-5: 2.57px;
+    --ls-4: -1.5px;
+    --ls-3: -1.05px;
+    --ls-2: 1px;
+    --ls-1: 1px;
+
+    /* line height */
+    --lh-1: 25px;
+    --lh-2: 25px;
+}
+
+@media (max-width: 918px) {
+    :root {
+        --fs-900: 3rem;
+        --fs-800: 1.5rem;
+        --fs-600: .75rem;
+        --fs-500: .688rem;
+        --fs-400: .563rem;
+        --fs-200: .5rem;
+
+        --ls-5: 1.93px;
+        --ls-4: -.9px;
+        --ls-1: .73px;
+
+        --lh-1: 22px;
+    }
+}
+
+@media (max-width: 720px) {
+    :root {
+        --fs-900: 2.5rem;
+        --fs-800: 1.25rem;
+        --fs-300: .938rem;
+
+        --ls-4: -.75px;
+        --ls-2: 1.36px;
+    }
+}
+
+/*======================================
+*                 reset                 *
+======================================*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+ul[role='list'], ol[role='list'] {list-style: none;}
+
+body {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    min-height: 100vh;
+    background: hsl(var(--clr-rich-black)) url(../assets/background-stars.svg) no-repeat center;
+    color: hsl(var(--clr-white));
+    font-family: var(--ff-spartan);
+    font-size: var(--fs-500);
+    line-height: 1.5;
+    transition: all .3s ease;
+}
+
+h1, h2, h3, h4, button, input, label {line-height: 1.1;}
+
+h1, h2, h3, h4 {text-wrap: balance;}
+  
+a {
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+  
+img, picture {
+    max-width: 100%;
+    display: block;
+  
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+input, button, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+}
+  
+textarea:not([rows]) {min-height: 10em;}
+  
+:target {scroll-margin-block: 5ex;}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
